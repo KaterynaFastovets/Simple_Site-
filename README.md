@@ -1,14 +1,14 @@
 # Simple Site Template
 
-Адаптивний сайт з використанням SCSS.
+A responsive website built using SCSS.
 
-## Технології
+## Technologies
 - HTML5
 - SCSS (variables, mixins)
 - Flexbox
 - Media Queries
 
-## Responsive
+## Responsive Breakpoints
 - 1440px
 - 768px
 - 375px
