@@ -1,0 +1,203 @@
+@use "modules.scss/tabs.css";
+@use "modules/variables" as v;
+@use "modules/mixines";
+
+/* ================= BASE ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: v.$font-main;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  width: 100%;
+  padding-left: 20.8%;
+  background: v.$background1;
+
+  .menu {
+    @include mixines.display1;
+    gap: 50px;
+    padding-top: 3.2%;
+    list-style: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: v.$background2;
+
+    #item {
+      color: v.$background3;
+    }
+
+    @include mixines.responsive(1440px) {
+      gap: 25px;
+      padding: 50px 0;
+    }
+
+    @include mixines.responsive(768px) {
+      flex-direction: column;
+      font-size: 14px;
+    }
+
+    @include mixines.responsive(375px) {
+      align-items: center;
+    }
+  }
+
+  .title {
+    @include mixines.font1;
+    margin-top: 6.6%;
+
+    @include mixines.responsive(768px) {
+      font-size: 30px;
+    }
+
+    @include mixines.responsive(375px) {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  .list {
+    @include mixines.font2;
+    margin-top: 2.4%;
+    margin-right: 68%;
+    color: v.$background4;
+
+    @include mixines.responsive(768px) {
+      margin-right: 0;
+      width: 95%;
+    }
+  }
+
+  .button-write-me {
+    @include mixines.font2;
+    width: 225px;
+    height: 65px;
+    margin: 2.6% 0 5.7%;
+    letter-spacing: 0.1em;
+    background: v.$background3;
+    color: v.$color1;
+    border: none;
+
+    @include mixines.responsive(375px) {
+      width: 100%;
+    }
+  }
+}
+
+/* ================= ABOUT ================= */
+
+.content-1 {
+  @include mixines.display2;
+  height: 359px;
+  background: v.$background6;
+
+  .about-me {
+    @include mixines.font2;
+    margin: auto auto 0;
+    text-align: center;
+  }
+
+  .main-content-1 {
+    @include mixines.font2;
+    text-indent: 2em;
+    text-align: center;
+    margin: auto;
+    color: v.$background4;
+
+    @include mixines.responsive(768px) {
+      width: 95%;
+      margin-top: 30px;
+    }
+  }
+}
+
+/* ================= PROJECTS ================= */
+
+.project {
+  @include mixines.display1;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 5.2% 0;
+  background: v.$background3;
+
+  @include mixines.responsive(1440px) {
+    gap: 20px;
+  }
+
+  @include mixines.responsive(768px) {
+    justify-content: space-evenly;
+
+    img {
+      padding: 10px 0 5px;
+    }
+  }
+}
+
+/* ================= WORK ================= */
+
+.my-work {
+  @include mixines.font2;
+  text-align: center;
+  margin: 4.1% auto 0;
+}
+
+.main-content-2 {
+  @include mixines.font2;
+  text-indent: 2em;
+  text-align: center;
+  margin: 2% auto 0;
+  color: v.$color3;
+
+  @include mixines.responsive(1440px) {
+    width: 95%;
+    margin: 60px auto;
+  }
+}
+
+/* ================= VIDEO ================= */
+
+iframe {
+  @include mixines.responsive(1440px) {
+    width: 640px;
+    height: 480px;
+  }
+
+  @include mixines.responsive(768px) {
+    width: 320px;
+    height: 240px;
+  }
+
+  @include mixines.responsive(375px) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  @include mixines.display2;
+  background: v.$background3;
+  padding: 2% 0 0 21.15%;
+
+  .name,
+  .item-2 {
+    @include mixines.footer;
+
+    @include mixines.responsive(768px) {
+      font-size: 13px;
+    }
+
+    @include mixines.responsive(375px) {
+      text-align: center;
+    }
+  }
+}

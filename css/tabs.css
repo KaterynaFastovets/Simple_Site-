@@ -1,0 +1,13 @@
+.tabs {
+  display: flex;
+  gap: 10px;
+
+  &__item {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  &__item--active {
+    font-weight: bold;
+  }
+}

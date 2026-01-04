@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  background: #eeeff1;
+  padding: 40px 10%;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+
+.menu .active {
+  color: #34547a;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.list {
+  max-width: 540px;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 30px;
+}
+
+.button-write-me {
+  background: #34547a;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ================= ABOUT ================= */
+
+.content-1 {
+  background: #f9f9f9;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.about-me {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.main-content-1 {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #727272;
+}
+
+/* ================= PROJECTS ================= */
+
+.project {
+  background: #34547a;
+  padding: 60px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* ================= WORK ================= */
+
+.content {
+  background: #eeeff1;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.my-work {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.main-content-2 {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #727272;
+}
+
+/* VIDEO */
+.video iframe {
+  width: 100%;
+  max-width: 1110px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: none;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #34547a;
+  color: #fff;
+  padding: 40px 10%;
+}
+
+.name {
+  font-size: 21px;
+}
+
+.item-2 {
+  font-size: 13px;
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .about-me,
+  .my-work {
+    font-size: 28px;
+  }
+}
+
+/* Mobile (375px) */
+@media (max-width: 375px) {
+  .header,
+  .content-1,
+  .content,
+  .footer {
+    padding: 40px 5%;
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .menu {
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .button-write-me {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .about-me,
+  .my-work {
+    font-size: 22px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .item-2 {
+    font-size: 11px;
+  }
+}
